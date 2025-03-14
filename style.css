@@ -36,6 +36,7 @@ header span {
     padding: 60px 0;
     max-height: 100vh;
     display: flex;
+    justify-content: center;
     /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
 }
 
@@ -47,7 +48,7 @@ header span {
 
 .text-wrapper {
     
-    max-width: 1140px;
+    max-width: 425px;
     /* 📍 Cвойство для ограничения ширины блока с текстом в первой секции */
 }
 
@@ -69,9 +70,12 @@ header span {
 .about-section {
     background-color: #fff;
     padding: 100px 0;
+  
+   
 }
 
 .about-section .wrapper {
+    
     /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 }
 
@@ -96,6 +100,7 @@ select:hover,
 
 .info-wrapper {
     display: flex;
+    flex-direction: row;
 
     /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
 }
@@ -128,7 +133,7 @@ select:hover,
 }
 
 .skills {
-     min-width: 475px; 
+     min-width: 50%; 
     /* 📍 Свойства flexbox для расположения элементов с классом .label */
 }
 
@@ -137,6 +142,9 @@ select:hover,
     font-weight: 400;
     font-size: 16px;
     padding-left: 20px;
+    gap: 165px;
+   flex-direction: row;
+   
 }
 
 .label {
@@ -207,6 +215,7 @@ footer {
     font-size: 14px;
     color: #2965f1;
     text-decoration: none;
+   
 }
 
 .footer-link:hover {
